@@ -1313,7 +1313,7 @@ footer a:hover {
         if (!u || !d) return;
         const addr = u + '@' + d;
         el.setAttribute('href', 'mailto:' + addr);
-        const label = el.querySelector('[aria-hidden="true"]');
+        const label = el.querySelector('span[aria-hidden="true"]');
         if (label) label.textContent = addr;
         const sr = el.querySelector('.visually-hidden');
         if (sr) sr.remove();
