@@ -254,6 +254,25 @@ summary:focus-visible {
     opacity: 0.55;
     overflow: visible;
     z-index: 3;
+    will-change: transform;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.top-fade {
+    will-change: transform;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+@media (max-width: 720px) {
+    .pulse-line {
+        top: env(safe-area-inset-top, 0px);
+        height: 70px;
+    }
+    .top-fade {
+        height: calc(110px + env(safe-area-inset-top, 0px));
+    }
 }
 .pulse-line path {
     fill: none;
