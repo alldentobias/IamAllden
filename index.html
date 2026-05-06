@@ -1,278 +1,1372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tobias Alldén — Software Engineer</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Tobias Alldén is a software engineer based in Oslo, Norway.">
-    <meta name="keywords" content="Tobias Alldén, software engineer, developer, Oslo, Norway">
-    <meta name="author" content="Tobias Alldén">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Tobias Alldén — Software Engineer">
-    <meta property="og:description" content="Software engineer based in Oslo, Norway.">
-    <meta property="og:locale" content="en_US">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Tobias Alldén — Software Engineer">
-    <meta name="twitter:description" content="Software engineer based in Oslo, Norway.">
-    
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#0a0a0a">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<!-- TODO: replace `hello` (data-u) and `allden.dev` (data-d) on .email-link elements with personal email; replace Formspree placeholder ID. Email is JS-decoded to deter raw-HTML scrapers. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        html, body {
-            height: 100%;
-        }
+<title>Tobias Alldén — Agentic Commerce Engineer in Oslo</title>
+<meta name="description" content="Tobias Alldén is a senior software engineer in Oslo building agentic commerce at Vipps MobilePay. Ex-Microsoft recommender systems and MLOps at hyperscale.">
+<meta name="keywords" content="agentic commerce engineer, recommender systems, senior software engineer Oslo">
+<meta name="author" content="Tobias Alldén">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="canonical" href="https://allden.dev/">
 
-        body {
-            background: #0a0a0a;
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-weight: 300;
-            color: #8a8a8a;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 2rem;
-            background-image: 
-                radial-gradient(ellipse at 50% 0%, rgba(40, 40, 40, 0.15) 0%, transparent 60%);
-        }
+<meta property="og:title" content="Tobias Alldén — Agentic Commerce Engineer in Oslo">
+<meta property="og:description" content="Senior software engineer building agentic commerce at Vipps MobilePay. Previously shipped recommender systems and MLOps for the Microsoft feed (140M+ MAU).">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://allden.dev/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="nb_NO">
+<meta property="profile:first_name" content="Tobias">
+<meta property="profile:last_name" content="Alldén">
 
-        /* Pulse line animation */
-        .pulse-line {
-            position: fixed;
-            top: 40px;
-            left: 0;
-            width: 100%;
-            height: 60px;
-            pointer-events: none;
-            opacity: 0.55;
-            overflow: visible;
-        }
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tobias Alldén — Agentic Commerce Engineer in Oslo">
+<meta name="twitter:description" content="Senior engineer at Vipps MobilePay's Agentic Commerce team. Ex-Microsoft recommender systems. Based in Oslo.">
 
-        .pulse-line path {
-            fill: none;
-            stroke: url(#pulseGradient);
-            stroke-width: 1.2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
+<link rel="icon" type="image/svg+xml" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 
-        .pulse-line .line-draw {
-            stroke-dasharray: 3000;
-            stroke-dashoffset: 3000;
-            animation: drawLine 6s ease-in-out infinite;
-        }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://allden.dev/#profilepage",
+      "url": "https://allden.dev/",
+      "name": "Tobias Alldén — Agentic Commerce Engineer in Oslo",
+      "description": "Personal site of Tobias Alldén, senior software engineer in Oslo building agentic commerce at Vipps MobilePay.",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://allden.dev/#website" },
+      "mainEntity": { "@id": "https://allden.dev/#person" },
+      "dateModified": "2026-05-06"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://allden.dev/#website",
+      "url": "https://allden.dev/",
+      "name": "Tobias Alldén",
+      "publisher": { "@id": "https://allden.dev/#person" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://allden.dev/#person",
+      "name": "Tobias Alldén",
+      "alternateName": "Tobias Allden",
+      "givenName": "Tobias",
+      "familyName": "Alldén",
+      "url": "https://allden.dev/",
+      "jobTitle": ["Senior Software Engineer", "Agentic Commerce Engineer"],
+      "description": "Tobias Alldén is a senior software engineer based in Oslo, Norway, working on the Agentic Commerce team at Vipps MobilePay, where he helps merchants prepare for a checkout era driven by AI agents. He previously led backend and infrastructure for Aion Loop at AION, a greentech platform for plastic-waste traceability, and spent nearly four years at Microsoft as a senior software engineer building recommender systems and MLOps for the Microsoft feed, which served more than 140 million monthly active users.",
+      "worksFor": { "@type": "Organization", "name": "Vipps MobilePay", "url": "https://vippsmobilepay.com/" },
+      "alumniOf": [
+        { "@type": "Organization", "name": "AION" },
+        { "@type": "Organization", "name": "Microsoft", "url": "https://www.microsoft.com/" },
+        { "@type": "Organization", "name": "Volvo Cars", "url": "https://www.volvocars.com/" },
+        { "@type": "CollegeOrUniversity", "name": "Chalmers University of Technology", "url": "https://www.chalmers.se/" }
+      ],
+      "knowsAbout": [
+        "Agentic commerce",
+        "AI agents in commerce",
+        "Merchant readiness for agentic AI",
+        "Universal Commerce Protocol",
+        "Recommender systems",
+        "Recommendation engines at hyperscale",
+        "MLOps",
+        "Production machine learning systems",
+        "Backend engineering",
+        "Distributed systems",
+        "Fintech and payments",
+        "Greentech and supply-chain traceability"
+      ],
+      "address": { "@type": "PostalAddress", "addressLocality": "Oslo", "addressCountry": "NO" },
+      "sameAs": [
+        "https://github.com/alldentobias",
+        "https://www.linkedin.com/in/tobiasallden/",
+        "https://www.instagram.com/alldentobias/",
+        "https://theorg.com/org/vipps-mobilepay/org-chart/tobias-allden"
+      ]
+    }
+  ]
+}
+</script>
 
-        @keyframes drawLine {
-            0% {
-                stroke-dashoffset: 3000;
-                opacity: 0;
-            }
-            5% {
-                opacity: 1;
-            }
-            50% {
-                stroke-dashoffset: 0;
-                opacity: 1;
-            }
-            95% {
-                opacity: 1;
-            }
-            100% {
-                stroke-dashoffset: -3000;
-                opacity: 0;
-            }
-        }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does Tobias Alldén do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tobias Alldén is a senior software engineer at Vipps MobilePay in Oslo, working on the Agentic Commerce team. His focus is helping Nordic merchants accept payments and run checkout flows that are initiated and completed by AI agents on behalf of consumers. He has seven years of professional software-engineering experience, primarily in backend systems and applied machine learning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is agentic commerce, and how does Tobias Alldén work on it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Agentic commerce is the emerging category of e-commerce in which AI assistants act on a shopper's behalf — discovering products, comparing options, and completing checkout. At Vipps MobilePay, Tobias Alldén works on the engineering surface that lets merchants accept payments from these agents, including support for the Universal Commerce Protocol (UCP) and the Vipps MobilePay Payment Handler."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What did Tobias Alldén build at Microsoft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From August 2019 to January 2023, Tobias Alldén was a senior software engineer at Microsoft working on the Microsoft feed, the personalized content surface that reaches more than 140 million monthly active users. His work covered recommender-system backends and MLOps — the infrastructure that takes machine-learning models from notebook to production at consumer scale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What did Tobias Alldén do at AION?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At AION (January 2023 to February 2024), Tobias Alldén was the lead backend and infrastructure engineer on Aion Loop, a greentech traceability platform for plastic waste. He built and operated the systems that tracked plastic flows across recycling supply chains."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should contact Tobias Alldén?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Engineers and product leaders working on AI agents, agentic checkout, recommender systems at scale, or merchant enablement for the agentic web are the best fit. Recruiters and conference organizers focused on those topics in the Nordics are also a good match. The canonical contact route is LinkedIn (tobiasallden) and the website allden.dev."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Tobias Alldén based?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tobias Alldén is based in Oslo, Norway, and works at Vipps MobilePay's Oslo office. He is Swedish by background and works across the Nordic market."
+      }
+    }
+  ]
+}
+</script>
 
-        .container {
-            text-align: center;
-            max-width: 600px;
-            position: relative;
-            z-index: 1;
-        }
+<style>
+:root {
+    --bg: #0a0a0a;
+    --bg-soft: #111111;
+    --rule: rgba(255, 255, 255, 0.07);
+    --rule-strong: rgba(255, 255, 255, 0.14);
+    --ink-faint: #5a5a5a;
+    --ink-muted: #8a8a8a;
+    --ink: #b8b8b8;
+    --ink-bright: #d4d4d4;
+    --accent: #f5f1e8;
+    --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    --measure: 65ch;
+    --gutter: clamp(1.25rem, 4vw, 2.5rem);
+    --section-y: clamp(5rem, 12vh, 9rem);
+}
 
-        h1 {
-            font-size: clamp(1.8rem, 5vw, 2.8rem);
-            font-weight: 300;
-            letter-spacing: 0.15em;
-            margin-bottom: 0.5em;
-            background: linear-gradient(
-                135deg,
-                #9a9a9a 0%,
-                #d4d4d4 25%,
-                #7a7a7a 50%,
-                #c0c0c0 75%,
-                #8a8a8a 100%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-        .subtitle {
-            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-            letter-spacing: 0.1em;
-            color: #5a5a5a;
-            margin-bottom: 3rem;
-        }
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    background: var(--bg);
+}
 
-        .description {
-            font-size: clamp(1rem, 2.5vw, 1.15rem);
-            line-height: 1.9;
-            letter-spacing: 0.04em;
-            margin-bottom: 3rem;
-            color: #6a6a6a;
-        }
+body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-image:
+        radial-gradient(ellipse at 50% -10%, rgba(60, 60, 60, 0.18) 0%, transparent 55%),
+        radial-gradient(ellipse at 50% 120%, rgba(40, 40, 40, 0.10) 0%, transparent 60%);
+}
 
-        .description em {
-            font-style: italic;
-            color: #7a7a7a;
-        }
+::selection {
+    background: var(--accent);
+    color: #0a0a0a;
+}
 
-        .socials-intro {
-            font-size: 0.95rem;
-            letter-spacing: 0.08em;
-            color: #505050;
-            margin-bottom: 1.5rem;
-        }
+a {
+    color: var(--ink-bright);
+    text-decoration: none;
+    transition: color 200ms ease, border-color 200ms ease;
+}
 
-        .socials {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2.2rem;
-            flex-wrap: wrap;
-        }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 1px;
+}
 
-        .socials a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #4a4a4a;
-            text-decoration: none;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
+#stars {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
 
-        .socials a:hover {
-            color: #909090;
-            transform: translateY(-2px);
-        }
+.top-fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 160px;
+    pointer-events: none;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom,
+        rgba(10, 10, 10, 0.92) 0%,
+        rgba(10, 10, 10, 0.55) 45%,
+        rgba(10, 10, 10, 0) 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 35%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 35%, transparent 100%);
+}
 
-        .socials a svg {
-            width: 20px;
-            height: 20px;
-            fill: currentColor;
-            transition: fill 0.3s ease;
-        }
+.pulse-line {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    pointer-events: none;
+    opacity: 0.55;
+    overflow: visible;
+    z-index: 3;
+}
+.pulse-line path {
+    fill: none;
+    stroke: url(#pulseGradient);
+    stroke-width: 1.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.pulse-line .line-draw {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: drawLine 6s ease-in-out infinite;
+}
+@keyframes drawLine {
+    0%   { stroke-dashoffset: 3000; opacity: 0; }
+    5%   { opacity: 1; }
+    50%  { stroke-dashoffset: 0; opacity: 1; }
+    95%  { opacity: 1; }
+    100% { stroke-dashoffset: -3000; opacity: 0; }
+}
 
-        /* Easter egg */
-        .easter-egg {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            opacity: 0.25;
-            transition: opacity 0.4s ease, transform 0.3s ease;
-            z-index: 10;
-        }
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--accent);
+    color: #0a0a0a;
+    padding: 0.5rem 0.75rem;
+    z-index: 100;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+}
 
-        .easter-egg:hover {
-            opacity: 0.7;
-            transform: translateY(-3px);
-        }
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
-        .easter-egg svg {
-            width: 24px;
-            height: 24px;
-            fill: #6a6a6a;
-        }
-    </style>
+.hp-field {
+    position: absolute !important;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
+.shell {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+}
+
+.section {
+    padding: var(--section-y) 0;
+    border-top: 1px solid var(--rule);
+}
+.section:first-of-type {
+    border-top: none;
+}
+
+.section-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.5rem 2rem;
+    margin-bottom: 3rem;
+    align-items: baseline;
+}
+@media (min-width: 720px) {
+    .section-head {
+        grid-template-columns: 12ch minmax(0, 1fr);
+    }
+}
+
+.eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 400;
+}
+
+.eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 1.6em;
+    height: 1px;
+    background: var(--rule-strong);
+    vertical-align: middle;
+    margin-right: 0.7em;
+    transform: translateY(-2px);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--serif);
+    font-weight: 300;
+    color: var(--ink-bright);
+    letter-spacing: -0.005em;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    line-height: 1.1;
+    color: var(--ink-bright);
+    max-width: 22ch;
+}
+
+h3 {
+    font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+p, li {
+    max-width: var(--measure);
+    color: var(--ink);
+}
+
+.prose p + p { margin-top: 1rem; }
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    padding: clamp(7rem, 18vh, 12rem) 0 var(--section-y);
+    position: relative;
+    border-top: none;
+}
+
+.hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 2.25rem;
+}
+
+.hero-meta .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #c9d4b6;
+    box-shadow: 0 0 8px rgba(201, 212, 182, 0.6);
+    animation: livePulse 2.4s ease-in-out infinite;
+}
+@keyframes livePulse {
+    0%, 100% { opacity: 0.45; }
+    50%      { opacity: 1; }
+}
+
+h1 {
+    font-size: clamp(2.4rem, 6.8vw, 5.4rem);
+    line-height: 1.04;
+    letter-spacing: -0.012em;
+    font-weight: 300;
+    max-width: 18ch;
+    margin: 0 0 1.5rem;
+    background: linear-gradient(
+        135deg,
+        #9a9a9a 0%,
+        #d4d4d4 25%,
+        #7a7a7a 50%,
+        #c0c0c0 75%,
+        #8a8a8a 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+h1 em {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.hero-sub {
+    font-family: var(--sans);
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    line-height: 1.55;
+    color: var(--ink-muted);
+    max-width: 52ch;
+    margin-bottom: 3rem;
+}
+
+.hero-sub strong {
+    color: var(--ink-bright);
+    font-weight: 500;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    color: var(--ink-faint);
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    transition: color 220ms ease, border-color 220ms ease, transform 220ms ease, background 220ms ease;
+}
+
+.socials a:hover {
+    color: var(--accent);
+    border-color: var(--rule-strong);
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.socials a svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.hero-marker {
+    position: absolute;
+    bottom: 2.5rem;
+    left: var(--gutter);
+    right: var(--gutter);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    pointer-events: none;
+}
+.hero-marker span:last-child {
+    text-align: right;
+}
+
+/* ABOUT */
+.about-lede {
+    font-family: var(--serif);
+    font-size: clamp(1.25rem, 2.1vw, 1.6rem);
+    line-height: 1.5;
+    color: var(--ink-bright);
+    font-weight: 300;
+    max-width: 38ch;
+    margin-bottom: 2.5rem;
+}
+
+.about-prose p {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--ink);
+}
+
+.facts {
+    list-style: none;
+    margin-top: 3rem;
+    padding: 0;
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--rule);
+}
+
+.facts li {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink);
+    font-size: 0.97rem;
+    line-height: 1.55;
+    display: grid;
+    grid-template-columns: 2.25rem 1fr;
+    gap: 1rem;
+    max-width: none;
+}
+
+.facts li::before {
+    content: counter(fact-counter, decimal-leading-zero);
+    counter-increment: fact-counter;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-faint);
+    padding-top: 0.35rem;
+}
+
+.facts {
+    counter-reset: fact-counter;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+}
+
+.role {
+    position: relative;
+    padding: 1.75rem 0 1.75rem 0;
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    gap: 0.5rem 2rem;
+    grid-template-columns: 1fr;
+}
+.role:last-child { border-bottom: none; }
+
+@media (min-width: 720px) {
+    .role {
+        grid-template-columns: 12ch 1fr;
+        align-items: baseline;
+        padding: 2.25rem 0;
+    }
+}
+
+.role-dates {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-top: 0.4rem;
+}
+
+.role-body { max-width: var(--measure); }
+
+.role h3 {
+    font-size: clamp(1.25rem, 2.1vw, 1.5rem);
+    color: var(--ink-bright);
+    margin-bottom: 0.25rem;
+    font-weight: 400;
+}
+
+.role h3 .at {
+    color: var(--ink-faint);
+    font-style: italic;
+}
+
+.role .role-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    margin-bottom: 0.9rem;
+}
+
+.live-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-bright);
+    border: 1px solid var(--rule-strong);
+    padding: 0.18rem 0.55rem 0.16rem;
+    border-radius: 999px;
+}
+.live-tag::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #c9d4b6;
+    box-shadow: 0 0 6px rgba(201, 212, 182, 0.7);
+    animation: livePulse 2.4s ease-in-out infinite;
+}
+
+.role p {
+    font-size: 0.985rem;
+    line-height: 1.7;
+    color: var(--ink);
+}
+
+/* PILLARS */
+.pillars {
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+    .pillars { grid-template-columns: repeat(3, 1fr); }
+}
+
+.pillar {
+    background: var(--bg);
+    padding: 2.25rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: background 280ms ease;
+}
+.pillar:hover { background: #0c0c0c; }
+
+.pillar-num {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    color: var(--ink-faint);
+}
+
+.pillar h3 {
+    font-family: var(--serif);
+    font-size: 1.45rem;
+    line-height: 1.2;
+    color: var(--ink-bright);
+    font-weight: 400;
+}
+
+.pillar p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--ink);
+}
+
+/* FAQ */
+.faq {
+    border-top: 1px solid var(--rule);
+}
+
+.faq details {
+    border-bottom: 1px solid var(--rule);
+}
+
+.faq summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.4rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1.5rem;
+    gap: 1.25rem;
+    align-items: center;
+    font-family: var(--serif);
+    font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+    color: var(--ink-bright);
+    font-weight: 400;
+    line-height: 1.35;
+    transition: color 200ms ease;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary:hover { color: var(--accent); }
+
+.faq summary .indicator {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin-left: auto;
+}
+.faq summary .indicator::before,
+.faq summary .indicator::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+    transition: transform 240ms ease, opacity 240ms ease;
+}
+.faq summary .indicator::before {
+    top: 50%; left: 0;
+    width: 100%; height: 1px;
+    transform: translateY(-50%);
+}
+.faq summary .indicator::after {
+    top: 0; left: 50%;
+    width: 1px; height: 100%;
+    transform: translateX(-50%);
+}
+.faq details[open] summary .indicator::after {
+    transform: translateX(-50%) scaleY(0);
+}
+
+.faq-answer {
+    padding: 0 0 1.6rem;
+    max-width: var(--measure);
+}
+.faq-answer p {
+    font-size: 0.97rem;
+    line-height: 1.75;
+    color: var(--ink);
+}
+
+/* CONTACT */
+.contact-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
+
+.contact-intro p {
+    font-family: var(--serif);
+    font-size: clamp(1.15rem, 1.7vw, 1.4rem);
+    line-height: 1.55;
+    color: var(--ink-bright);
+    font-weight: 300;
+    margin-bottom: 1.75rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+}
+.contact-list li {
+    border-bottom: 1px solid var(--rule);
+    padding: 0.95rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    max-width: none;
+}
+.contact-list .label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+}
+.contact-list a {
+    color: var(--ink-bright);
+    border-bottom: 1px solid transparent;
+}
+.contact-list a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+form.contact-form {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.field {
+    display: grid;
+    gap: 0.4rem;
+}
+.field label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+}
+.field input,
+.field textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--rule-strong);
+    color: var(--ink-bright);
+    font-family: var(--sans);
+    font-size: 1rem;
+    padding: 0.65rem 0;
+    width: 100%;
+    transition: border-color 200ms ease;
+}
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+    border-bottom-color: var(--accent);
+}
+.field textarea {
+    min-height: 7rem;
+    resize: vertical;
+    line-height: 1.6;
+}
+.field input::placeholder,
+.field textarea::placeholder {
+    color: var(--ink-faint);
+    font-family: var(--sans);
+}
+
+.submit {
+    margin-top: 0.75rem;
+    background: transparent;
+    color: var(--ink-bright);
+    border: 1px solid var(--rule-strong);
+    padding: 0.85rem 1.5rem;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 220ms ease, border-color 220ms ease, background 220ms ease;
+    justify-self: start;
+}
+.submit:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(245, 241, 232, 0.04);
+}
+.submit:disabled {
+    opacity: 0.5;
+    cursor: progress;
+}
+
+.form-status {
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    color: var(--ink-muted);
+    min-height: 1.4em;
+}
+.form-status.success { color: var(--accent); }
+.form-status.error   { color: #d4a8a8; }
+
+/* FOOTER */
+footer {
+    padding: 2.5rem 0 5rem;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+}
+footer a {
+    color: var(--ink-faint);
+    border-bottom: 1px solid transparent;
+}
+footer a:hover {
+    color: var(--ink-bright);
+    border-bottom-color: var(--rule-strong);
+}
+
+/* Easter egg */
+.easter-egg {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.25;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    z-index: 10;
+    line-height: 0;
+}
+.easter-egg:hover {
+    opacity: 0.7;
+    transform: translateY(-3px);
+}
+.easter-egg svg {
+    width: 24px;
+    height: 24px;
+    fill: #6a6a6a;
+}
+
+/* Reveal animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 700ms cubic-bezier(0.2, 0.6, 0.2, 1), transform 700ms cubic-bezier(0.2, 0.6, 0.2, 1);
+    will-change: opacity, transform;
+}
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+.reveal[data-delay="1"] { transition-delay: 80ms; }
+.reveal[data-delay="2"] { transition-delay: 160ms; }
+.reveal[data-delay="3"] { transition-delay: 240ms; }
+.reveal[data-delay="4"] { transition-delay: 320ms; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+    .pulse-line .line-draw { stroke-dashoffset: 0; opacity: 1; }
+    .hero-meta .dot, .live-tag::before { animation: none; }
+}
+</style>
 </head>
 <body>
-    <!-- Animated pulse line -->
-    <svg class="pulse-line" viewBox="0 0 1920 60" preserveAspectRatio="none">
-        <defs>
-            <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:0" />
-                <stop offset="15%" style="stop-color:#4a4a4a;stop-opacity:1" />
-                <stop offset="50%" style="stop-color:#6a6a6a;stop-opacity:1" />
-                <stop offset="85%" style="stop-color:#4a4a4a;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0" />
-            </linearGradient>
-        </defs>
-        <!-- Heartbeat monitor line with subtle peaks -->
-        <path class="line-draw" d="M0,30 
-            L300,30 
-            L320,30 L340,28 L360,32 L380,30 
-            L480,30 
-            L500,30 L510,30 L520,15 L530,45 L540,5 L550,55 L560,30 L570,30 
-            L680,30 
-            L700,28 L720,32 L740,30 
-            L900,30 
-            L920,30 L930,30 L940,18 L950,42 L960,8 L970,52 L980,30 L990,30 
-            L1100,30 
-            L1120,28 L1140,32 L1160,30 
-            L1300,30 
-            L1320,30 L1330,30 L1340,12 L1350,48 L1360,3 L1370,57 L1380,30 L1390,30 
-            L1500,30 
-            L1520,28 L1540,32 L1560,30 
-            L1920,30" />
-    </svg>
 
-    <main class="container">
-        <h1>I am Tobias Alldén.</h1>
-        <p class="subtitle">A software engineer in Oslo, Norway</p>
-        
-        <p class="description">
-            This is supposed to be a fancy personal website, which it will, <em>probably</em>, maybe become in the future.
-        </p>
-        
-        <p class="socials-intro">In the meantime. Here are my socials.</p>
-        
-        <nav class="socials">
+<a class="skip-link" href="#about">Skip to content</a>
+
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<div class="top-fade" aria-hidden="true"></div>
+
+<svg class="pulse-line" viewBox="0 0 1920 60" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+        <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:0" />
+            <stop offset="15%" style="stop-color:#4a4a4a;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#6a6a6a;stop-opacity:1" />
+            <stop offset="85%" style="stop-color:#4a4a4a;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0" />
+        </linearGradient>
+    </defs>
+    <path class="line-draw" d="M0,30
+        L300,30
+        L320,30 L340,28 L360,32 L380,30
+        L480,30
+        L500,30 L510,30 L520,15 L530,45 L540,5 L550,55 L560,30 L570,30
+        L680,30
+        L700,28 L720,32 L740,30
+        L900,30
+        L920,30 L930,30 L940,18 L950,42 L960,8 L970,52 L980,30 L990,30
+        L1100,30
+        L1120,28 L1140,32 L1160,30
+        L1300,30
+        L1320,30 L1330,30 L1340,12 L1350,48 L1360,3 L1370,57 L1380,30 L1390,30
+        L1500,30
+        L1520,28 L1540,32 L1560,30
+        L1920,30" />
+</svg>
+
+<div class="shell">
+
+<header class="section hero" id="top">
+    <div>
+        <p class="hero-meta reveal"><span class="dot" aria-hidden="true"></span><span>Live from Oslo &nbsp;·&nbsp; 59.91&deg; N, 10.75&deg; E</span></p>
+        <h1 class="reveal" data-delay="1">Tobias Alldén &mdash; building <em>agentic commerce</em> in Oslo.</h1>
+        <p class="hero-sub reveal" data-delay="2"><strong>Senior software engineer at Vipps MobilePay</strong>, on the Agentic Commerce team. Previously Microsoft</p>
+        <nav class="socials reveal" data-delay="3" aria-label="Social profiles">
             <a href="https://github.com/alldentobias" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <!-- GitHub icon -->
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-                </svg>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
             </a>
-            <a href="https://linkedin.com/in/tobiasallden" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <!-- LinkedIn icon -->
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
+            <a href="https://www.linkedin.com/in/tobiasallden/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
-            <a href="https://instagram.com/alldentobias" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <!-- Instagram icon -->
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"/>
-                </svg>
+            <a href="https://www.instagram.com/alldentobias/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+            </a>
+            <a href="#" class="email-link" data-u="hello" data-d="allden.dev" aria-label="Email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm10 9.07L2.4 6.5h19.2L12 13.07zM22 8.51l-9.45 6.48a1 1 0 0 1-1.1 0L2 8.51V18h20V8.51z"/></svg>
             </a>
         </nav>
-    </main>
+    </div>
+    <div class="hero-marker" aria-hidden="true">
+        <span>&sect; 01 / Profile</span>
+        <span>Scroll &darr;</span>
+    </div>
+</header>
 
-    <!-- Easter egg -->
-    <a href="https://beer.allden.dev" class="easter-egg" aria-label="Beer time">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 3h13v2h1a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3h-1v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V3zm13 8h1a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1v4zM6 5v14h9V5H6zm2 3h2v8H8V8zm3 0h2v8h-2V8z"/>
-        </svg>
-    </a>
+<section class="section" id="about" aria-labelledby="about-heading">
+    <div class="section-head">
+        <p class="eyebrow reveal">&sect; 02 &mdash; About</p>
+        <h2 id="about-heading" class="reveal">About Tobias</h2>
+    </div>
+    <p class="about-lede reveal">Senior engineer. Backend by trade, machine learning by appetite, agentic commerce by current obsession.</p>
+    <div class="about-prose prose reveal" data-delay="1">
+        <p>Tobias Alldén is a senior software engineer based in Oslo, Norway, working on the Agentic Commerce team at Vipps MobilePay, where he helps merchants prepare for a checkout era driven by AI agents. He previously led backend and infrastructure for Aion Loop at AION, a greentech platform for plastic-waste traceability, and spent nearly four years at Microsoft as a senior software engineer building recommender systems and MLOps for the Microsoft feed, which served more than 140 million monthly active users. He writes about agentic commerce, recommender systems, and applied AI at allden.dev.</p>
+    </div>
+    <ul class="facts reveal" data-delay="2" aria-label="Quick facts">
+        <li>Tobias Alldén is a senior software engineer at Vipps MobilePay in Oslo, Norway.</li>
+        <li>Tobias Alldén works on the Agentic Commerce team at Vipps MobilePay, focused on enabling merchants for AI-agent-driven checkout.</li>
+        <li>Before Vipps MobilePay, Tobias Alldén led backend and infrastructure engineering at AION on Aion Loop, a plastic-waste traceability platform.</li>
+        <li>From 2019 to 2023, Tobias Alldén was a software engineer at Microsoft, building recommender systems and MLOps for the Microsoft feed (140M+ monthly active users). Reacing the level of senior engineer in only 3 years</li>
+        <li>Tobias Alldén holds an MSc in Software Engineering from Chalmers University of Technology (2019).</li>
+        <li>Tobias Alldén's areas of expertise are agentic commerce, recommender systems at scale, MLOps, backend infrastructure, merchant enablement for AI agents and agentic engineering</li>
+    </ul>
+</section>
+
+<section class="section" id="experience" aria-labelledby="experience-heading">
+    <div class="section-head">
+        <p class="eyebrow reveal">&sect; 03 &mdash; Experience</p>
+        <h2 id="experience-heading" class="reveal">Experience</h2>
+    </div>
+    <ol class="timeline">
+        <li class="role reveal">
+            <p class="role-dates">Feb 2024 &mdash; Present</p>
+            <div class="role-body">
+                <h3>Senior Software Engineer <span class="at">at</span> Vipps MobilePay</h3>
+                <p class="role-meta">Agentic Commerce team &nbsp;·&nbsp; Oslo <span class="live-tag" aria-label="Currently">Currently</span></p>
+                <p>I'm on the Agentic Commerce team at Vipps MobilePay, building the rails that let AI agents transact on behalf of real people &mdash; and getting Nordic merchants ready for the moment those agents become the dominant traffic source. The work spans payment authorization flows, merchant-side discoverability, and the messy edges where autonomous buyers meet existing checkout.</p>
+            </div>
+        </li>
+        <li class="role reveal">
+            <p class="role-dates">Jan 2023 &mdash; Feb 2024</p>
+            <div class="role-body">
+                <h3>Senior Backend &amp; Infrastructure Engineer <span class="at">at</span> AION</h3>
+                <p class="role-meta">Aion Loop &nbsp;·&nbsp; Oslo</p>
+                <p>Led backend and cloud infrastructure for Aion Loop, AION's greentech platform for plastic-waste traceability. Built and operated the systems that tracked plastic flows across recycling supply chains in production.</p>
+            </div>
+        </li>
+        <li class="role reveal">
+            <p class="role-dates">Aug 2019 &mdash; Jan 2023</p>
+            <div class="role-body">
+                <h3>Senior Software Engineer <span class="at">at</span> Microsoft</h3>
+                <p class="role-meta">Microsoft feed &nbsp;·&nbsp; recommender systems &amp; MLOps</p>
+                <p>Built backend systems and MLOps for the Microsoft feed service, the personalized content surface serving more than 140 million monthly active users.</p>
+            </div>
+        </li>
+        <li class="role reveal">
+            <p class="role-dates">Summer 2018</p>
+            <div class="role-body">
+                <h3>Summer Intern, Embedded <span class="at">at</span> Volvo Cars</h3>
+                <p>Embedded software work on automotive systems during a summer placement in Gothenburg.</p>
+            </div>
+        </li>
+        <li class="role reveal">
+            <p class="role-dates">May 2017 &mdash; May 2018</p>
+            <div class="role-body">
+                <h3>Web Developer <span class="at">at</span> We Know IT</h3>
+                <p>Client-facing web development across a portfolio of small and mid-size projects. Primarily for WordPress sites</p>
+            </div>
+        </li>
+    </ol>
+</section>
+
+<section class="section" id="focus" aria-labelledby="focus-heading">
+    <div class="section-head">
+        <p class="eyebrow reveal">&sect; 04 &mdash; Focus</p>
+        <h2 id="focus-heading" class="reveal">What I'm deep on</h2>
+    </div>
+    <div class="pillars reveal" data-delay="1">
+        <article class="pillar">
+            <p class="pillar-num">01</p>
+            <h3>Agentic commerce</h3>
+            <p>I'm on the Agentic Commerce team at Vipps MobilePay, building the rails that let AI agents transact on behalf of real people &mdash; and getting Nordic merchants ready for the moment those agents become the dominant traffic source. The work spans payment authorization flows, merchant-side discoverability, and the messy edges where autonomous buyers meet existing checkout. Before agentic commerce, I previously worked on the Vipps Checkout product, that was later acquired by Kustom</p>
+        </article>
+        <article class="pillar">
+            <p class="pillar-num">02</p>
+            <h3>Machine learning at scale</h3>
+            <p>At Microsoft I built backend systems and MLOps for the Microsoft feed service, which served personalized content to over 140 million monthly users. That meant production recommender systems where a 50ms regression is a Sev-2 and an offline metric you can't reproduce online is a career hazard. I care about recommender quality, ranking infrastructure, and the unglamorous plumbing that keeps ML alive in production.</p>
+        </article>
+        <article class="pillar">
+            <p class="pillar-num">03</p>
+            <h3>Backend leadership</h3>
+            <p>I've led backend and cloud infrastructure for an early-stage greentech (AION's plastic-waste traceability platform) and contributed senior IC work inside two of Europe's largest payment companies. I'm most useful on systems that have to be correct, observable, and fast &mdash; and on teams that need someone willing to own the boring parts of the stack so the interesting parts can move.</p>
+        </article>
+    </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-heading">
+    <div class="section-head">
+        <p class="eyebrow reveal">&sect; 05 &mdash; Questions</p>
+        <h2 id="faq-heading" class="reveal">Frequently asked</h2>
+    </div>
+    <div class="faq reveal" data-delay="1">
+        <details>
+            <summary>What does Tobias Alldén do?<span class="indicator" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Tobias Alldén is a senior software engineer at Vipps MobilePay in Oslo, working on the Agentic Commerce team. His focus is helping Nordic merchants accept payments and run checkout flows that are initiated and completed by AI agents on behalf of consumers. He has nine years of professional software-engineering experience, primarily in backend systems and applied machine learning.</p></div>
+        </details>
+        <details>
+            <summary>What is agentic commerce, and how does Tobias Alldén work on it?<span class="indicator" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Agentic commerce is the emerging category of e-commerce in which AI assistants act on a shopper's behalf &mdash; discovering products, comparing options, and completing checkout. At Vipps MobilePay, Tobias Alldén works on the engineering surface that lets merchants accept payments from these agents, including support for the Universal Commerce Protocol (UCP) and the Vipps MobilePay Payment Handler.</p></div>
+        </details>
+        <details>
+            <summary>What did Tobias Alldén build at Microsoft?<span class="indicator" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>From August 2019 to January 2023, Tobias Alldén was a senior software engineer at Microsoft working on the Microsoft feed, the personalized content surface that reaches more than 140 million monthly active users. His work covered recommender-system backends and MLOps &mdash; the infrastructure that takes machine-learning models from notebook to production at consumer scale.</p></div>
+        </details>
+        <details>
+            <summary>What did Tobias Alldén do at AION?<span class="indicator" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>At AION (January 2023 to February 2024), Tobias Alldén was the lead backend and infrastructure engineer on Aion Loop, a greentech traceability platform for plastic waste. He built and operated the systems that tracked plastic flows across recycling supply chains.</p></div>
+        </details>
+        <details>
+            <summary>Who should contact Tobias Alldén?<span class="indicator" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Engineers and product leaders working on AI agents, agentic checkout, recommender systems at scale, or merchant enablement for the agentic web are the best fit. Recruiters and conference organizers focused on those topics in the Nordics are also a good match. The canonical contact route is LinkedIn (tobiasallden) and the website allden.dev.</p></div>
+        </details>
+        <details>
+            <summary>Where is Tobias Alldén based?<span class="indicator" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Tobias Alldén is based in Oslo, Norway, and works at Vipps MobilePay's Oslo office. He is Swedish by background and works across the Nordic market.</p></div>
+        </details>
+    </div>
+</section>
+
+<section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="section-head">
+        <p class="eyebrow reveal">&sect; 06 &mdash; Contact</p>
+        <h2 id="contact-heading" class="reveal">Get in touch</h2>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-intro reveal">
+            <p>Working on agentic checkout, recommender systems at scale, or merchant enablement for the agentic web? Send a note. I read every message.</p>
+            <ul class="contact-list" aria-label="Direct contact">
+                <li><span class="label">Email</span><a href="#" class="email-link" data-u="hello" data-d="allden.dev"><span aria-hidden="true">hello&nbsp;[at]&nbsp;allden&nbsp;[dot]&nbsp;dev</span><span class="visually-hidden">Email address available on click.</span></a></li>
+                <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/tobiasallden/" target="_blank" rel="noopener noreferrer">tobiasallden</a></li>
+                <li><span class="label">GitHub</span><a href="https://github.com/alldentobias" target="_blank" rel="noopener noreferrer">alldentobias</a></li>
+            </ul>
+        </div>
+        <form class="contact-form reveal" data-delay="1" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <div class="field">
+                <label for="cf-name">Name</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="hp-field" aria-hidden="true">
+                <label for="cf-website">Leave this field empty</label>
+                <input id="cf-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="submit">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <span>&copy; 2026 Tobias Alldén &nbsp;&middot;&nbsp; allden.dev</span>
+    <a href="#top">Back to top &uarr;</a>
+</footer>
+
+</div>
+
+<a href="https://beer.allden.dev" class="easter-egg" aria-label="Beer time">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M4 3h13v2h1a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3h-1v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V3zm13 8h1a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1v4zM6 5v14h9V5H6zm2 3h2v8H8V8zm3 0h2v8h-2V8z"/>
+    </svg>
+</a>
+
+<script>
+(function () {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const canvas = document.getElementById('stars');
+    const ctx = canvas.getContext('2d', { alpha: true });
+    let dpr = Math.min(window.devicePixelRatio || 1, 2);
+    let w = 0, h = 0;
+    let layers = [];
+    let scrollY = window.scrollY;
+
+    function rand(a, b) { return a + Math.random() * (b - a); }
+
+    function makeStars() {
+        const area = w * h;
+        const baseDensity = area / 14000;
+        layers = [
+            { stars: [], speed: 0.020, parallax: 0.04, alpha: 0.55, size: [0.5, 1.0], count: Math.floor(baseDensity * 0.55) },
+            { stars: [], speed: 0.045, parallax: 0.10, alpha: 0.75, size: [0.7, 1.4], count: Math.floor(baseDensity * 0.30) },
+            { stars: [], speed: 0.080, parallax: 0.18, alpha: 1.00, size: [0.9, 1.8], count: Math.floor(baseDensity * 0.15) }
+        ];
+        for (const layer of layers) {
+            for (let i = 0; i < layer.count; i++) {
+                layer.stars.push({
+                    x: Math.random() * w,
+                    y: Math.random() * h,
+                    r: rand(layer.size[0], layer.size[1]),
+                    tw: Math.random() * Math.PI * 2,
+                    tws: rand(0.004, 0.012)
+                });
+            }
+        }
+    }
+
+    function resize() {
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        w = window.innerWidth;
+        h = window.innerHeight;
+        canvas.width = Math.floor(w * dpr);
+        canvas.height = Math.floor(h * dpr);
+        canvas.style.width = w + 'px';
+        canvas.style.height = h + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        makeStars();
+        if (reduceMotion) drawStatic();
+    }
+
+    function drawStatic() {
+        ctx.clearRect(0, 0, w, h);
+        for (const layer of layers) {
+            for (const s of layer.stars) {
+                ctx.globalAlpha = layer.alpha * 0.7;
+                ctx.fillStyle = '#e6e2d6';
+                ctx.beginPath();
+                ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        ctx.globalAlpha = 1;
+    }
+
+    function frame(t) {
+        ctx.clearRect(0, 0, w, h);
+        for (const layer of layers) {
+            for (const s of layer.stars) {
+                s.y += layer.speed;
+                if (s.y > h + 2) { s.y = -2; s.x = Math.random() * w; }
+                s.tw += s.tws;
+                const offsetY = -scrollY * layer.parallax;
+                let yy = s.y + offsetY;
+                yy = ((yy % h) + h) % h;
+                const flicker = 0.65 + 0.35 * Math.sin(s.tw);
+                ctx.globalAlpha = layer.alpha * flicker;
+                ctx.fillStyle = '#e6e2d6';
+                ctx.beginPath();
+                ctx.arc(s.x, yy, s.r, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(frame);
+    }
+
+    resize();
+    window.addEventListener('resize', resize, { passive: true });
+    window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
+
+    if (!reduceMotion) {
+        requestAnimationFrame(frame);
+    }
+
+    if ('IntersectionObserver' in window && !reduceMotion) {
+        const io = new IntersectionObserver((entries) => {
+            for (const e of entries) {
+                if (e.isIntersecting) {
+                    e.target.classList.add('is-visible');
+                    io.unobserve(e.target);
+                }
+            }
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    } else {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
+    }
+
+    document.querySelectorAll('.email-link').forEach(el => {
+        const u = el.dataset.u, d = el.dataset.d;
+        if (!u || !d) return;
+        const addr = u + '@' + d;
+        el.setAttribute('href', 'mailto:' + addr);
+        const label = el.querySelector('[aria-hidden="true"]');
+        if (label) label.textContent = addr;
+        const sr = el.querySelector('.visually-hidden');
+        if (sr) sr.remove();
+    });
+
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    if (form) {
+        form.addEventListener('submit', async (ev) => {
+            ev.preventDefault();
+            const button = form.querySelector('.submit');
+            if (form._gotcha && form._gotcha.value) {
+                status.textContent = 'Message sent. I’ll be in touch.';
+                status.className = 'form-status success';
+                form.reset();
+                return;
+            }
+            const data = {
+                name: form.name.value.trim(),
+                email: form.email.value.trim(),
+                message: form.message.value.trim()
+            };
+            if (!data.name || !data.email || !data.message) {
+                status.textContent = 'Please fill in every field.';
+                status.className = 'form-status error';
+                return;
+            }
+            button.disabled = true;
+            status.textContent = 'Sending...';
+            status.className = 'form-status';
+            try {
+                const res = await fetch(form.action, {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                if (res.ok) {
+                    form.reset();
+                    status.textContent = 'Message sent. I’ll be in touch.';
+                    status.className = 'form-status success';
+                } else {
+                    throw new Error('Request failed');
+                }
+            } catch (err) {
+                status.textContent = 'Something went wrong. Try LinkedIn or the email link above.';
+                status.className = 'form-status error';
+            } finally {
+                button.disabled = false;
+            }
+        });
+    }
+})();
+</script>
+
 </body>
 </html>
